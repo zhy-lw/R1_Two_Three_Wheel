@@ -1,0 +1,12 @@
+{
+    "folders": [
+        {
+            "path": "."
+        }
+    ],
+    "settings": {
+        "debug.hideSlowPreLaunchWarning": true,
+        "debug.showInStatusBar": "never"
+    },
+    "extensions": {}
+}
