@@ -340,10 +340,10 @@ void UART4_IRQHandler(void)
   if (__HAL_UART_GET_FLAG(&huart4, UART_FLAG_IDLE) && __HAL_UART_GET_IT_SOURCE(&huart4, UART_IT_IDLE))
   {
     HAL_UART_DMAStop(&huart4);
-    if (usart4_dma_buff[0] == 0xAB && usart4_dma_buff[17] == 0xBA)
+    if (usart4_dma_buff[0] == 0xAB && usart4_dma_buff[19] == 0xBA)
     {
-			value = (uint16_t)usart4_dma_buff[18] |
-                 ((uint16_t)usart4_dma_buff[19] << 8);
+			value = (uint16_t)usart4_dma_buff[20] |
+                 ((uint16_t)usart4_dma_buff[21] << 8);
 			if(value == crc_ccitt(0, usart4_dma_buff, sizeof(Pack_TransRemote_t)-2))
 			{
 				BaseType_t xHigherPriorityTaskWoken = pdFALSE;

@@ -23,6 +23,8 @@ typedef struct
     uint8_t head;
     float expectDirection[2];
     float expextVelocity[2];
+		ChassisMode Mode;
+		uint8_t Action_Sign;
     uint8_t tail;
 		uint16_t crc;
 } Pack_TransRemote_t;
