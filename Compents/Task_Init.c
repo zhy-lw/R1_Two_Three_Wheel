@@ -15,7 +15,7 @@ TaskHandle_t Uart_Handle;
 extern TaskHandle_t task_handle;
 
 //接收
-uint8_t usart4_dma_buff[40];
+uint8_t usart4_dma_buff[60];
 Pack_TransRemote_t Pack_Trans;
 
 //任务

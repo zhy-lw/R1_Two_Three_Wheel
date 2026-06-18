@@ -23,6 +23,7 @@ typedef struct
     uint8_t head;
     float expectDirection[2];
     float expextVelocity[2];
+		uint32_t key;
 		ChassisMode Mode;
 		uint8_t Action_Sign;
     uint8_t tail;
